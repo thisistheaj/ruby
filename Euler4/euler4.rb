@@ -1,4 +1,4 @@
-def isPalindrome(s)
+def is_palindrome(s)
   if s == s.reverse
     true
   else
@@ -11,7 +11,7 @@ for i in 0..999
   ii = 999-i
   for j in 0..999
     jj = 999 - j
-    if isPalindrome((ii*jj).to_s)
+    if is_palindrome((ii*jj).to_s)
       a.push(ii*jj)
       break
     end
